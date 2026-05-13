@@ -561,44 +561,338 @@ hr {
 </div>
 <div class="nav-links">
 <div class="nav-part">第一部分：基础与原理</div>
+<a href="#第一章-引言语言模型的新范式-74" class="nav-chapter" data-level="2">第一章 引言——语言模型的新范式</a>
+<a href="#11-自回归语言模型的辉煌与局限-84" class="nav-section" data-level="3">1.1 自回归语言模型的辉煌与局限</a>
+<a href="#12-扩散模型的崛起从图像到语言-132" class="nav-section" data-level="3">1.2 扩散模型的崛起：从图像到语言</a>
+<a href="#13-连续vs离散两条技术路线的博弈-177" class="nav-section" data-level="3">1.3 连续vs离散：两条技术路线的博弈</a>
+<a href="#14-elf的核心洞察极简的连续方案-230" class="nav-section" data-level="3">1.4 ELF的核心洞察：极简的连续方案</a>
+<a href="#15-本书的贡献与阅读指南-274" class="nav-section" data-level="3">1.5 本书的贡献与阅读指南</a>
+<a href="#第二章-数学基础从扩散到流匹配-304" class="nav-chapter" data-level="2">第二章 数学基础——从扩散到流匹配</a>
+<a href="#21-概率论基础回顾-310" class="nav-section" data-level="3">2.1 概率论基础回顾</a>
+<a href="#22-扩散模型的数学框架-376" class="nav-section" data-level="3">2.2 扩散模型的数学框架</a>
+<a href="#221-前向扩散过程-378" class="nav-section" data-level="3">2.2.1 前向扩散过程</a>
+<a href="#222-反向去噪过程-400" class="nav-section" data-level="3">2.2.2 反向去噪过程</a>
+<a href="#223-ddpm与ddim-422" class="nav-section" data-level="3">2.2.3 DDPM与DDIM</a>
+<a href="#23-score-based生成模型-440" class="nav-section" data-level="3">2.3 Score-Based生成模型</a>
+<a href="#231-分数函数与langevin动力学-442" class="nav-section" data-level="3">2.3.1 分数函数与Langevin动力学</a>
+<a href="#232-随机微分方程sde视角-462" class="nav-section" data-level="3">2.3.2 随机微分方程(SDE)视角</a>
+<a href="#24-flow-matching-492" class="nav-section" data-level="3">2.4 Flow Matching</a>
+<a href="#241-从ode到flow-matching-494" class="nav-section" data-level="3">2.4.1 从ODE到Flow Matching</a>
+<a href="#242-条件流匹配cfm-512" class="nav-section" data-level="3">2.4.2 条件流匹配(CFM)</a>
+<a href="#243-rectified-flows-532" class="nav-section" data-level="3">2.4.3 Rectified Flows</a>
+<a href="#244-速度参数化vs数据参数化-552" class="nav-section" data-level="3">2.4.4 速度参数化vs数据参数化</a>
+<a href="#25-从图像扩散到语言扩散的数学桥梁-572" class="nav-section" data-level="3">2.5 从图像扩散到语言扩散的数学桥梁</a>
+<a href="#第三章-语言与嵌入离散世界的连续表示-636" class="nav-chapter" data-level="2">第三章 语言与嵌入——离散世界的连续表示</a>
+<a href="#31-语言的离散本质-642" class="nav-section" data-level="3">3.1 语言的离散本质</a>
+<a href="#32-词嵌入的演进-668" class="nav-section" data-level="3">3.2 词嵌入的演进</a>
+<a href="#321-从one-hot到word2vec-670" class="nav-section" data-level="3">3.2.1 从One-Hot到Word2Vec</a>
+<a href="#322-上下文嵌入elmobert与t5-690" class="nav-section" data-level="3">3.2.2 上下文嵌入：ELMo、BERT与T5</a>
+<a href="#323-嵌入空间的几何性质-704" class="nav-section" data-level="3">3.2.3 嵌入空间的几何性质</a>
+<a href="#33-编码器选择为什么是t5-716" class="nav-section" data-level="3">3.3 编码器选择：为什么是T5？</a>
+<a href="#331-t5架构概述-718" class="nav-section" data-level="3">3.3.1 T5架构概述</a>
+<a href="#332-双向上下文的重要性-736" class="nav-section" data-level="3">3.3.2 双向上下文的重要性</a>
+<a href="#333-预训练vs随机初始化vs可学习嵌入-752" class="nav-section" data-level="3">3.3.3 预训练vs随机初始化vs可学习嵌入</a>
+<a href="#34-瓶颈投影压缩与重构-774" class="nav-section" data-level="3">3.4 瓶颈投影：压缩与重构</a>
+<a href="#35-嵌入空间中的噪声高斯假设的合理性-864" class="nav-section" data-level="3">3.5 嵌入空间中的噪声：高斯假设的合理性</a>
 <div class="nav-part">第二部分：ELF的核心技术与架构</div>
 <a href="#第四章elf框架核心方法论-954" class="nav-chapter" data-level="2">第四章：ELF框架——核心方法论</a>
 <a href="#41-elf的整体架构概览-956" class="nav-section" data-level="3">4.1 ELF的整体架构概览</a>
+<a href="#411-从输入到输出的完整流程-958" class="nav-section" data-level="3">4.1.1 从输入到输出的完整流程</a>
+<a href="#412-与latent-diffusion-model的对比-1006" class="nav-section" data-level="3">4.1.2 与Latent Diffusion Model的对比</a>
+<a href="#413-elf的极简主义设计哲学-1029" class="nav-section" data-level="3">4.1.3 ELF的"极简主义"设计哲学</a>
 <a href="#42-flow-matching在嵌入空间中的应用-1043" class="nav-section" data-level="3">4.2 Flow Matching在嵌入空间中的应用</a>
+<a href="#421-线性插值路径mathbfz_t-tmathbfx-1-tepsilon-1045" class="nav-section" data-level="3">4.2.1 线性插值路径：$\mathbf{z}_t = t\mathbf{x} + (1-t)\epsilon$</a>
+<a href="#422-速度场定义mathbfv-dmathbfzdt-mathbfx---epsilon-1081" class="nav-section" data-level="3">4.2.2 速度场定义：$\mathbf{v} = d\mathbf{z}/dt = \mathbf{x} - \epsilon$</a>
+<a href="#423-x-prediction-vs-v-prediction为什么选择预测数据-1109" class="nav-section" data-level="3">4.2.3 x-prediction vs v-prediction：为什么选择预测数据？</a>
+<a href="#424-mse训练损失的推导-1142" class="nav-section" data-level="3">4.2.4 MSE训练损失的推导</a>
 <a href="#43-最终解码从连续到离散的桥梁-1200" class="nav-section" data-level="3">4.3 最终解码：从连续到离散的桥梁</a>
+<a href="#431-为什么不需要单独的解码器-1202" class="nav-section" data-level="3">4.3.1 为什么不需要单独的解码器？</a>
+<a href="#432-最终时间步的特殊处理-1218" class="nav-section" data-level="3">4.3.2 最终时间步的特殊处理</a>
+<a href="#433-token级腐蚀过程-1234" class="nav-section" data-level="3">4.3.3 Token级腐蚀过程</a>
+<a href="#434-unembedding与logits计算-1271" class="nav-section" data-level="3">4.3.4 Unembedding与logits计算</a>
+<a href="#435-交叉熵损失-1303" class="nav-section" data-level="3">4.3.5 交叉熵损失</a>
 <a href="#44-双分支训练策略-1337" class="nav-section" data-level="3">4.4 双分支训练策略</a>
+<a href="#441-去噪分支80mse损失-1339" class="nav-section" data-level="3">4.4.1 去噪分支(80%)：MSE损失</a>
+<a href="#442-解码分支20ce损失-1357" class="nav-section" data-level="3">4.4.2 解码分支(20%)：CE损失</a>
+<a href="#443-批处理中的分支切换-1377" class="nav-section" data-level="3">4.4.3 批处理中的分支切换</a>
+<a href="#444-模式tokendenoise-vs-decode-1433" class="nav-section" data-level="3">4.4.4 模式token：denoise vs decode</a>
 <a href="#45-推理过程-1453" class="nav-section" data-level="3">4.5 推理过程</a>
+<a href="#451-ode采样器euler方法-1455" class="nav-section" data-level="3">4.5.1 ODE采样器：Euler方法</a>
+<a href="#452-sde采样器随机性的力量-1501" class="nav-section" data-level="3">4.5.2 SDE采样器：随机性的力量</a>
+<a href="#453-采样步骤与时间调度-1554" class="nav-section" data-level="3">4.5.3 采样步骤与时间调度</a>
+<a href="#454-从噪声到文本的完整推理流程-1574" class="nav-section" data-level="3">4.5.4 从噪声到文本的完整推理流程</a>
 <a href="#第五章条件生成与引导技术-1621" class="nav-chapter" data-level="2">第五章：条件生成与引导技术</a>
 <a href="#51-classifier-free-guidance-cfg-1623" class="nav-section" data-level="3">5.1 Classifier-Free Guidance (CFG)</a>
+<a href="#511-cfg的数学原理-1625" class="nav-section" data-level="3">5.1.1 CFG的数学原理</a>
+<a href="#512-为什么cfg在连续空间中更自然-1648" class="nav-section" data-level="3">5.1.2 为什么CFG在连续空间中更自然？</a>
+<a href="#513-self-conditioning作为条件信号-1662" class="nav-section" data-level="3">5.1.3 Self-Conditioning作为条件信号</a>
+<a href="#514-训练时cfg-vs-推理时cfg-1684" class="nav-section" data-level="3">5.1.4 训练时CFG vs 推理时CFG</a>
+<a href="#515-cfg-scale的质量-多样性权衡-1724" class="nav-section" data-level="3">5.1.5 CFG scale的质量-多样性权衡</a>
 <a href="#52-self-conditioning详解-1743" class="nav-section" data-level="3">5.2 Self-Conditioning详解</a>
+<a href="#521-基本原理前一步预测作为条件-1745" class="nav-section" data-level="3">5.2.1 基本原理：前一步预测作为条件</a>
+<a href="#522-训练中的50概率策略-1774" class="nav-section" data-level="3">5.2.2 训练中的50%概率策略</a>
+<a href="#523-推理中的实现-1821" class="nav-section" data-level="3">5.2.3 推理中的实现</a>
+<a href="#524-拼接输入的设计-1853" class="nav-section" data-level="3">5.2.4 拼接输入的设计</a>
 <a href="#53-条件生成扩展-1890" class="nav-section" data-level="3">5.3 条件生成扩展</a>
+<a href="#531-前缀条件干净嵌入的保留-1892" class="nav-section" data-level="3">5.3.1 前缀条件：干净嵌入的保留</a>
+<a href="#532-注意力掩码的设计-1927" class="nav-section" data-level="3">5.3.2 注意力掩码的设计</a>
+<a href="#533-机器翻译任务-1960" class="nav-section" data-level="3">5.3.3 机器翻译任务</a>
+<a href="#534-文本摘要任务-1990" class="nav-section" data-level="3">5.3.4 文本摘要任务</a>
+<a href="#535-label-drop策略-2013" class="nav-section" data-level="3">5.3.5 Label Drop策略</a>
 <a href="#54-引导技术的比较与选择-2037" class="nav-section" data-level="3">5.4 引导技术的比较与选择</a>
+<a href="#541-cfg-scale的影响-2039" class="nav-section" data-level="3">5.4.1 CFG scale的影响</a>
+<a href="#542-self-conditioning-cfg-scale的影响-2061" class="nav-section" data-level="3">5.4.2 Self-Conditioning CFG scale的影响</a>
+<a href="#543-最佳组合的选择策略-2078" class="nav-section" data-level="3">5.4.3 最佳组合的选择策略</a>
 <a href="#第六章模型架构深度剖析-2113" class="nav-chapter" data-level="2">第六章：模型架构深度剖析</a>
 <a href="#61-transformer骨干网络-2115" class="nav-section" data-level="3">6.1 Transformer骨干网络</a>
+<a href="#611-elfblock基本构建单元-2117" class="nav-section" data-level="3">6.1.1 ELFBlock：基本构建单元</a>
+<a href="#612-rmsnorm为什么不用layernorm-2169" class="nav-section" data-level="3">6.1.2 RMSNorm：为什么不用LayerNorm？</a>
+<a href="#613-多头注意力与qk-norm-2222" class="nav-section" data-level="3">6.1.3 多头注意力与QK-Norm</a>
+<a href="#614-swiglu前馈网络-2298" class="nav-section" data-level="3">6.1.4 SwiGLU前馈网络</a>
+<a href="#615-旋转位置编码rope-2345" class="nav-section" data-level="3">6.1.5 旋转位置编码(RoPE)</a>
 <a href="#62-时间条件机制-2401" class="nav-section" data-level="3">6.2 时间条件机制</a>
+<a href="#621-正弦时间嵌入-2403" class="nav-section" data-level="3">6.2.1 正弦时间嵌入</a>
+<a href="#622-可学习时间前缀token-2442" class="nav-section" data-level="3">6.2.2 可学习时间前缀token</a>
+<a href="#623-self-conditioning-cfg嵌入-2484" class="nav-section" data-level="3">6.2.3 Self-Conditioning CFG嵌入</a>
 <a href="#63-模型规模与缩放-2513" class="nav-section" data-level="3">6.3 模型规模与缩放</a>
+<a href="#631-elf-b-105m基础模型-2515" class="nav-section" data-level="3">6.3.1 ELF-B (105M)：基础模型</a>
+<a href="#632-elf-m-342m中等模型-2546" class="nav-section" data-level="3">6.3.2 ELF-M (342M)：中等模型</a>
+<a href="#633-elf-l-652m大模型-2567" class="nav-section" data-level="3">6.3.3 ELF-L (652M)：大模型</a>
+<a href="#634-缩放规律分析-2592" class="nav-section" data-level="3">6.3.4 缩放规律分析</a>
 <a href="#64-jaxflax实现细节-2608" class="nav-section" data-level="3">6.4 JAX/Flax实现细节</a>
+<a href="#641-为什么选择jax-2610" class="nav-section" data-level="3">6.4.1 为什么选择JAX？</a>
+<a href="#642-pmap并行训练-2655" class="nav-section" data-level="3">6.4.2 pmap并行训练</a>
+<a href="#643-xla编译优化-2726" class="nav-section" data-level="3">6.4.3 XLA编译优化</a>
+<a href="#644-tpu训练的最佳实践-2762" class="nav-section" data-level="3">6.4.4 TPU训练的最佳实践</a>
 <a href="#65-代码走读从配置到模型实例化-2818" class="nav-section" data-level="3">6.5 代码走读：从配置到模型实例化</a>
+<a href="#651-config数据类设计-2820" class="nav-section" data-level="3">6.5.1 Config数据类设计</a>
+<a href="#652-yaml配置系统-2881" class="nav-section" data-level="3">6.5.2 YAML配置系统</a>
+<a href="#653-模型工厂函数-2953" class="nav-section" data-level="3">6.5.3 模型工厂函数</a>
+<a href="#654-参数初始化策略-3021" class="nav-section" data-level="3">6.5.4 参数初始化策略</a>
 <div class="nav-part">第三部分：实验验证与深入分析</div>
 <a href="#第七章实验设计与评估方法-3117" class="nav-chapter" data-level="2">第七章：实验设计与评估方法</a>
 <a href="#71-数据集选择与预处理-3119" class="nav-section" data-level="3">7.1 数据集选择与预处理</a>
+<a href="#711-openwebtext-owt无条件生成基准-3121" class="nav-section" data-level="3">7.1.1 OpenWebText (OWT)：无条件生成基准</a>
+<a href="#712-wmt14-de-en机器翻译基准-3137" class="nav-section" data-level="3">7.1.2 WMT14 De-En：机器翻译基准</a>
+<a href="#713-xsum文本摘要基准-3151" class="nav-section" data-level="3">7.1.3 XSum：文本摘要基准</a>
+<a href="#714-数据预处理与tokenization-3165" class="nav-section" data-level="3">7.1.4 数据预处理与tokenization</a>
+<a href="#715-序列长度选择与packing策略-3177" class="nav-section" data-level="3">7.1.5 序列长度选择与packing策略</a>
 <a href="#72-评估指标详解-3187" class="nav-section" data-level="3">7.2 评估指标详解</a>
+<a href="#721-生成困惑度gen-ppl质量的代理指标-3189" class="nav-section" data-level="3">7.2.1 生成困惑度（Gen. PPL）：质量的代理指标</a>
+<a href="#722-一元熵unigram-entropy多样性的度量-3201" class="nav-section" data-level="3">7.2.2 一元熵（Unigram Entropy）：多样性的度量</a>
+<a href="#723-bleu分数翻译质量评估-3217" class="nav-section" data-level="3">7.2.3 BLEU分数：翻译质量评估</a>
+<a href="#724-rouge分数摘要质量评估-3231" class="nav-section" data-level="3">7.2.4 ROUGE分数：摘要质量评估</a>
+<a href="#725-质量-多样性权衡的可视化-3249" class="nav-section" data-level="3">7.2.5 质量-多样性权衡的可视化</a>
 <a href="#73-训练配置-3261" class="nav-section" data-level="3">7.3 训练配置</a>
+<a href="#731-优化器选择muon-vs-adamw-3263" class="nav-section" data-level="3">7.3.1 优化器选择：Muon vs AdamW</a>
+<a href="#732-学习率调度-3275" class="nav-section" data-level="3">7.3.2 学习率调度</a>
+<a href="#733-批量大小与梯度累积-3283" class="nav-section" data-level="3">7.3.3 批量大小与梯度累积</a>
+<a href="#734-训练轮数与步数-3295" class="nav-section" data-level="3">7.3.4 训练轮数与步数</a>
+<a href="#735-ema策略-3307" class="nav-section" data-level="3">7.3.5 EMA策略</a>
 <a href="#74-基线方法介绍-3319" class="nav-section" data-level="3">7.4 基线方法介绍</a>
+<a href="#741-离散dlmmdlmduoe2d2-3321" class="nav-section" data-level="3">7.4.1 离散DLM：MDLM、Duo、E2D2</a>
+<a href="#742-连续dlmdiffusion-lmcdcdflmlangflow-3339" class="nav-section" data-level="3">7.4.2 连续DLM：Diffusion-LM、CDCD、FLM、LangFlow</a>
+<a href="#743-蒸馏方法sdttdcdfmlm-3359" class="nav-section" data-level="3">7.4.3 蒸馏方法：SDTT、DCD、FMLM</a>
 <a href="#第八章实验结果深度分析-3373" class="nav-chapter" data-level="2">第八章：实验结果深度分析</a>
 <a href="#81-消融研究关键设计选择-3375" class="nav-section" data-level="3">8.1 消融研究：关键设计选择</a>
+<a href="#811-cfg-scale的影响质量-多样性权衡曲线-3377" class="nav-section" data-level="3">8.1.1 CFG scale的影响：质量-多样性权衡曲线</a>
+<a href="#812-嵌入选择上下文vs非上下文冻结vs可学习-3399" class="nav-section" data-level="3">8.1.2 嵌入选择：上下文vs非上下文，冻结vs可学习</a>
+<a href="#813-解码策略共享权重vs两阶段-3421" class="nav-section" data-level="3">8.1.3 解码策略：共享权重vs两阶段</a>
+<a href="#814-采样器比较ode-vs-sde-3433" class="nav-section" data-level="3">8.1.4 采样器比较：ODE vs SDE</a>
+<a href="#815-模型缩放bml的性能对比-3453" class="nav-section" data-level="3">8.1.5 模型缩放：B/M/L的性能对比</a>
 <a href="#82-无条件生成的系统级比较-3465" class="nav-section" data-level="3">8.2 无条件生成的系统级比较</a>
+<a href="#821-与非蒸馏方法的比较-3467" class="nav-section" data-level="3">8.2.1 与非蒸馏方法的比较</a>
+<a href="#822-与蒸馏方法的比较-3475" class="nav-section" data-level="3">8.2.2 与蒸馏方法的比较</a>
+<a href="#823-训练效率45b-vs-500b-tokens-3481" class="nav-section" data-level="3">8.2.3 训练效率：45B vs 500B+ tokens</a>
+<a href="#824-推理效率32步达到ppl-24-3497" class="nav-section" data-level="3">8.2.4 推理效率：32步达到PPL 24</a>
 <a href="#83-条件生成结果-3509" class="nav-section" data-level="3">8.3 条件生成结果</a>
+<a href="#831-机器翻译bleu-264的突破-3511" class="nav-section" data-level="3">8.3.1 机器翻译：BLEU 26.4的突破</a>
+<a href="#832-文本摘要全面超越基线-3532" class="nav-section" data-level="3">8.3.2 文本摘要：全面超越基线</a>
+<a href="#833-定性分析生成样本展示-3543" class="nav-section" data-level="3">8.3.3 定性分析：生成样本展示</a>
 <a href="#84-与同期工作的比较-3554" class="nav-section" data-level="3">8.4 与同期工作的比较</a>
+<a href="#841-dfmcfm不同连续空间的选择-3556" class="nav-section" data-level="3">8.4.1 DFM、CFM：不同连续空间的选择</a>
+<a href="#842-flmfmlmtoken级监督的对比-3568" class="nav-section" data-level="3">8.4.2 FLM/FMLM：token级监督的对比</a>
+<a href="#843-langflow类似的flow-based方法-3578" class="nav-section" data-level="3">8.4.3 LangFlow：类似的flow-based方法</a>
+<a href="#844-elf的独特优势-3586" class="nav-section" data-level="3">8.4.4 ELF的独特优势</a>
 <a href="#第九章消融实验与深入分析-3602" class="nav-chapter" data-level="2">第九章：消融实验与深入分析</a>
 <a href="#91-嵌入空间的影响-3604" class="nav-section" data-level="3">9.1 嵌入空间的影响</a>
+<a href="#911-上下文嵌入-vs-非上下文嵌入-3606" class="nav-section" data-level="3">9.1.1 上下文嵌入 vs 非上下文嵌入</a>
+<a href="#912-预训练编码器-vs-从头训练-3622" class="nav-section" data-level="3">9.1.2 预训练编码器 vs 从头训练</a>
+<a href="#913-冻结-vs-可学习嵌入-3640" class="nav-section" data-level="3">9.1.3 冻结 vs 可学习嵌入</a>
+<a href="#914-高斯嵌入的实验-3658" class="nav-section" data-level="3">9.1.4 高斯嵌入的实验</a>
 <a href="#92-去噪与解码的平衡-3670" class="nav-section" data-level="3">9.2 去噪与解码的平衡</a>
+<a href="#921-decoder_prob的影响-3672" class="nav-section" data-level="3">9.2.1 decoder_prob的影响</a>
+<a href="#922-解码噪声的处理-3684" class="nav-section" data-level="3">9.2.2 解码噪声的处理</a>
+<a href="#923-共享权重的优势分析-3692" class="nav-section" data-level="3">9.2.3 共享权重的优势分析</a>
 <a href="#93-采样策略的深入分析-3706" class="nav-section" data-level="3">9.3 采样策略的深入分析</a>
+<a href="#931-ode采样的确定性行为-3708" class="nav-section" data-level="3">9.3.1 ODE采样的确定性行为</a>
+<a href="#932-sde采样的随机性增益-3722" class="nav-section" data-level="3">9.3.2 SDE采样的随机性增益</a>
+<a href="#933-步数敏感性分析-3740" class="nav-section" data-level="3">9.3.3 步数敏感性分析</a>
+<a href="#934-时间调度的影响-3767" class="nav-section" data-level="3">9.3.4 时间调度的影响</a>
 <a href="#94-cfg与self-conditioning的交互-3777" class="nav-section" data-level="3">9.4 CFG与Self-Conditioning的交互</a>
+<a href="#941-cfg-scale的最优选择-3779" class="nav-section" data-level="3">9.4.1 CFG scale的最优选择</a>
+<a href="#942-self-conditioning的贡献-3790" class="nav-section" data-level="3">9.4.2 Self-Conditioning的贡献</a>
+<a href="#943-两者的协同效应-3804" class="nav-section" data-level="3">9.4.3 两者的协同效应</a>
 <a href="#95-缩放规律与计算效率-3816" class="nav-section" data-level="3">9.5 缩放规律与计算效率</a>
+<a href="#951-模型大小与性能的关系-3818" class="nav-section" data-level="3">9.5.1 模型大小与性能的关系</a>
+<a href="#952-训练token数量的影响-3837" class="nav-section" data-level="3">9.5.2 训练token数量的影响</a>
+<a href="#953-计算预算的最优分配-3850" class="nav-section" data-level="3">9.5.3 计算预算的最优分配</a>
+<a href="#本部分小结-3866" class="nav-section" data-level="3">本部分小结</a>
 <div class="nav-part">第四部分：全景、工程与脉络</div>
+<a href="#第十章扩散语言模型全景-3886" class="nav-chapter" data-level="2">第十章：扩散语言模型全景</a>
+<a href="#101-扩散语言模型的分类体系-3890" class="nav-section" data-level="3">10.1 扩散语言模型的分类体系</a>
+<a href="#1011-连续-vs-离散根本性分野-3894" class="nav-section" data-level="3">10.1.1 连续 vs 离散：根本性分野</a>
+<a href="#1012-ddpm-vs-flow-matching训练范式-3904" class="nav-section" data-level="3">10.1.2 DDPM vs Flow Matching：训练范式</a>
+<a href="#1013-嵌入空间-vs-单纯形空间表示选择-3924" class="nav-section" data-level="3">10.1.3 嵌入空间 vs 单纯形空间：表示选择</a>
+<a href="#102-离散扩散语言模型-3934" class="nav-section" data-level="3">10.2 离散扩散语言模型</a>
+<a href="#1021-d3pms离散扩散的奠基之作-3938" class="nav-section" data-level="3">10.2.1 D3PMs：离散扩散的奠基之作</a>
+<a href="#1022-mdlm掩码扩散的简洁之美-3954" class="nav-section" data-level="3">10.2.2 MDLM：掩码扩散的简洁之美</a>
+<a href="#1023-duo均匀状态扩散-3966" class="nav-section" data-level="3">10.2.3 Duo：均匀状态扩散</a>
+<a href="#1024-e2d2半自回归块扩散-3972" class="nav-section" data-level="3">10.2.4 E2D2：半自回归块扩散</a>
+<a href="#1025-seddlladadream等最新进展-3983" class="nav-section" data-level="3">10.2.5 SEDD、LLaDA、Dream等最新进展</a>
+<a href="#103-连续扩散语言模型-3995" class="nav-section" data-level="3">10.3 连续扩散语言模型</a>
+<a href="#1031-diffusion-lm开山之作-3999" class="nav-section" data-level="3">10.3.1 Diffusion-LM：开山之作</a>
+<a href="#1022-cdcd连续扩散的探索-4014" class="nav-section" data-level="3">10.2.2 CDCD：连续扩散的探索</a>
+<a href="#1033-diffuseq与seqdiffuseq-4020" class="nav-section" data-level="3">10.3.3 DiffuSeq与SeqDiffuSeq</a>
+<a href="#1034-ssd-lm与tess单纯形方法-4028" class="nav-section" data-level="3">10.3.4 SSD-LM与TESS：单纯形方法</a>
+<a href="#1035-ld4lg潜在扩散方法-4044" class="nav-section" data-level="3">10.3.5 LD4LG：潜在扩散方法</a>
+<a href="#104-同期flow-based方法-4056" class="nav-section" data-level="3">10.4 同期Flow-Based方法</a>
+<a href="#1041-dfm离散流匹配-4060" class="nav-section" data-level="3">10.4.1 DFM：离散流匹配</a>
+<a href="#1042-cfm分类流匹配-4066" class="nav-section" data-level="3">10.4.2 CFM：分类流匹配</a>
+<a href="#1043-flmfmlm流语言模型-4072" class="nav-section" data-level="3">10.4.3 FLM/FMLM：流语言模型</a>
+<a href="#1044-langflow语言流-4078" class="nav-section" data-level="3">10.4.4 LangFlow：语言流</a>
+<a href="#1045-elf-vs-同期工作关键差异-4082" class="nav-section" data-level="3">10.4.5 ELF vs 同期工作：关键差异</a>
+<a href="#105-elf在技术图谱中的位置-4102" class="nav-section" data-level="3">10.5 ELF在技术图谱中的位置</a>
+<a href="#1051-连续dlm的正确打开方式-4106" class="nav-section" data-level="3">10.5.1 连续DLM的"正确打开方式"</a>
+<a href="#1052-最小化离散化处理-4121" class="nav-section" data-level="3">10.5.2 最小化离散化处理</a>
+<a href="#1053-图像生成技术的直接迁移-4131" class="nav-section" data-level="3">10.5.3 图像生成技术的直接迁移</a>
+<a href="#第十一章工程实践与代码实现-4146" class="nav-chapter" data-level="2">第十一章：工程实践与代码实现</a>
+<a href="#111-jaxflax生态系统-4150" class="nav-section" data-level="3">11.1 JAX/Flax生态系统</a>
+<a href="#1111-jax的核心特性-4154" class="nav-section" data-level="3">11.1.1 JAX的核心特性</a>
+<a href="#1112-flax模块系统-4191" class="nav-section" data-level="3">11.1.2 Flax模块系统</a>
+<a href="#1113-与pytorch的对比-4223" class="nav-section" data-level="3">11.1.3 与PyTorch的对比</a>
+<a href="#112-训练流水线实现-4243" class="nav-section" data-level="3">11.2 训练流水线实现</a>
+<a href="#1121-数据加载与预处理-4247" class="nav-section" data-level="3">11.2.1 数据加载与预处理</a>
+<a href="#1122-编码器的冻结与使用-4273" class="nav-section" data-level="3">11.2.2 编码器的冻结与使用</a>
+<a href="#1123-双分支训练步骤详解-4320" class="nav-section" data-level="3">11.2.3 双分支训练步骤详解</a>
+<a href="#1124-梯度累积与分布式训练-4368" class="nav-section" data-level="3">11.2.4 梯度累积与分布式训练</a>
+<a href="#1125-检查点保存与恢复-4427" class="nav-section" data-level="3">11.2.5 检查点保存与恢复</a>
+<a href="#113-推理流水线实现-4461" class="nav-section" data-level="3">11.3 推理流水线实现</a>
+<a href="#1131-ode采样器的jax实现-4465" class="nav-section" data-level="3">11.3.1 ODE采样器的JAX实现</a>
+<a href="#1132-sde采样器的jax实现-4508" class="nav-section" data-level="3">11.3.2 SDE采样器的JAX实现</a>
+<a href="#1133-self-conditioning的实现-4558" class="nav-section" data-level="3">11.3.3 Self-Conditioning的实现</a>
+<a href="#1134-cfg的实现-4601" class="nav-section" data-level="3">11.3.4 CFG的实现</a>
+<a href="#1135-批量生成与评估-4630" class="nav-section" data-level="3">11.3.5 批量生成与评估</a>
+<a href="#114-关键代码片段解析-4684" class="nav-section" data-level="3">11.4 关键代码片段解析</a>
+<a href="#1141-add_noise噪声注入-4688" class="nav-section" data-level="3">11.4.1 add_noise：噪声注入</a>
+<a href="#1142-net_out_to_v_x预测转换-4726" class="nav-section" data-level="3">11.4.2 net_out_to_v_x：预测转换</a>
+<a href="#1143-_ode_step与_sde_step采样步骤-4748" class="nav-section" data-level="3">11.4.3 _ode_step与_sde_step：采样步骤</a>
+<a href="#1144-train_step完整训练步骤-4811" class="nav-section" data-level="3">11.4.4 train_step：完整训练步骤</a>
+<a href="#115-复现与扩展指南-4873" class="nav-section" data-level="3">11.5 复现与扩展指南</a>
+<a href="#1151-环境配置-4877" class="nav-section" data-level="3">11.5.1 环境配置</a>
+<a href="#1152-自定义数据集-4914" class="nav-section" data-level="3">11.5.2 自定义数据集</a>
+<a href="#1153-超参数调优建议-4963" class="nav-section" data-level="3">11.5.3 超参数调优建议</a>
+<a href="#1154-常见问题与解决方案-4992" class="nav-section" data-level="3">11.5.4 常见问题与解决方案</a>
+<a href="#第十二章相关工作与技术脉络-5016" class="nav-chapter" data-level="2">第十二章：相关工作与技术脉络</a>
+<a href="#121-自回归语言模型的演进-5020" class="nav-section" data-level="3">12.1 自回归语言模型的演进</a>
+<a href="#1211-从n-gram到神经语言模型-5024" class="nav-section" data-level="3">12.1.1 从N-gram到神经语言模型</a>
+<a href="#1212-transformer革命-5038" class="nav-section" data-level="3">12.1.2 Transformer革命</a>
+<a href="#1213-gpt系列规模的力量-5054" class="nav-section" data-level="3">12.1.3 GPT系列：规模的力量</a>
+<a href="#1214-自回归模型的优势与局限-5068" class="nav-section" data-level="3">12.1.4 自回归模型的优势与局限</a>
+<a href="#122-非自回归生成方法-5086" class="nav-section" data-level="3">12.2 非自回归生成方法</a>
+<a href="#1221-非自回归机器翻译-5090" class="nav-section" data-level="3">12.2.1 非自回归机器翻译</a>
+<a href="#1222-iterative-refinement-5101" class="nav-section" data-level="3">12.2.2 Iterative Refinement</a>
+<a href="#1223-insertion-transformer-5111" class="nav-section" data-level="3">12.2.3 Insertion Transformer</a>
+<a href="#1224-与扩散方法的关系-5121" class="nav-section" data-level="3">12.2.4 与扩散方法的关系</a>
+<a href="#123-图像生成中的flow-matching-5136" class="nav-section" data-level="3">12.3 图像生成中的Flow Matching</a>
+<a href="#1231-stable-diffusion-3-5140" class="nav-section" data-level="3">12.3.1 Stable Diffusion 3</a>
+<a href="#1232-flux-5154" class="nav-section" data-level="3">12.3.2 Flux</a>
+<a href="#1233-rectified-flow-5166" class="nav-section" data-level="3">12.3.3 Rectified Flow</a>
+<a href="#1234-从图像到语言的技术迁移-5181" class="nav-section" data-level="3">12.3.4 从图像到语言的技术迁移</a>
+<a href="#124-潜在空间方法-5205" class="nav-section" data-level="3">12.4 潜在空间方法</a>
+<a href="#1241-vae与潜在空间-5209" class="nav-section" data-level="3">12.4.1 VAE与潜在空间</a>
+<a href="#1242-latent-diffusion-model-5226" class="nav-section" data-level="3">12.4.2 Latent Diffusion Model</a>
+<a href="#1243-elf的无解码器设计-5243" class="nav-section" data-level="3">12.4.3 ELF的"无解码器"设计</a>
+<a href="#125-优化器与训练技术-5263" class="nav-section" data-level="3">12.5 优化器与训练技术</a>
+<a href="#1251-adamw与权重衰减-5267" class="nav-section" data-level="3">12.5.1 AdamW与权重衰减</a>
+<a href="#1252-muon优化器-5287" class="nav-section" data-level="3">12.5.2 Muon优化器</a>
+<a href="#1253-ema策略-5303" class="nav-section" data-level="3">12.5.3 EMA策略</a>
+<a href="#1254-学习率调度-5351" class="nav-section" data-level="3">12.5.4 学习率调度</a>
+<a href="#本章小结-5405" class="nav-section" data-level="3">本章小结</a>
 <div class="nav-part">第五部分：应用、展望与实践</div>
+<a href="#第十三章-应用场景与实践案例-5421" class="nav-chapter" data-level="2">第十三章 应用场景与实践案例</a>
+<a href="#131-无条件文本生成-5425" class="nav-section" data-level="3">13.1 无条件文本生成</a>
+<a href="#1311-创意写作与故事生成-5429" class="nav-section" data-level="3">13.1.1 创意写作与故事生成</a>
+<a href="#1312-数据增强-5441" class="nav-section" data-level="3">13.1.2 数据增强</a>
+<a href="#1313-文本风格迁移的可能性-5458" class="nav-section" data-level="3">13.1.3 文本风格迁移的可能性</a>
+<a href="#132-机器翻译-5476" class="nav-section" data-level="3">13.2 机器翻译</a>
+<a href="#1321-扩散模型在翻译中的优势-5480" class="nav-section" data-level="3">13.2.1 扩散模型在翻译中的优势</a>
+<a href="#1322-并行解码-vs-自回归解码-5492" class="nav-section" data-level="3">13.2.2 并行解码 vs 自回归解码</a>
+<a href="#1323-wmt14-de-en结果分析-5510" class="nav-section" data-level="3">13.2.3 WMT14 De-En结果分析</a>
+<a href="#1324-多语言扩展的潜力-5535" class="nav-section" data-level="3">13.2.4 多语言扩展的潜力</a>
+<a href="#133-文本摘要-5547" class="nav-section" data-level="3">13.3 文本摘要</a>
+<a href="#1331-抽取式vs生成式摘要-5551" class="nav-section" data-level="3">13.3.1 抽取式vs生成式摘要</a>
+<a href="#1332-xsum任务分析-5561" class="nav-section" data-level="3">13.3.2 XSum任务分析</a>
+<a href="#1333-扩散模型的全局建模优势-5581" class="nav-section" data-level="3">13.3.3 扩散模型的全局建模优势</a>
+<a href="#134-代码生成的探索-5593" class="nav-section" data-level="3">13.4 代码生成的探索</a>
+<a href="#1341-代码作为语言的特殊性-5597" class="nav-section" data-level="3">13.4.1 代码作为语言的特殊性</a>
+<a href="#1342-扩散模型在代码生成中的潜力-5609" class="nav-section" data-level="3">13.4.2 扩散模型在代码生成中的潜力</a>
+<a href="#1343-与自回归代码模型的对比-5621" class="nav-section" data-level="3">13.4.3 与自回归代码模型的对比</a>
+<a href="#135-多模态扩展-5637" class="nav-section" data-level="3">13.5 多模态扩展</a>
+<a href="#1351-文本-图像联合生成-5641" class="nav-section" data-level="3">13.5.1 文本-图像联合生成</a>
+<a href="#1352-语音-文本跨模态-5653" class="nav-section" data-level="3">13.5.2 语音-文本跨模态</a>
+<a href="#1353-elf框架的通用性-5663" class="nav-section" data-level="3">13.5.3 ELF框架的通用性</a>
+<a href="#第十四章-局限性与未来方向-5677" class="nav-chapter" data-level="2">第十四章 局限性与未来方向</a>
+<a href="#141-当前局限性-5681" class="nav-section" data-level="3">14.1 当前局限性</a>
+<a href="#1411-推理速度多步采样的开销-5683" class="nav-section" data-level="3">14.1.1 推理速度：多步采样的开销</a>
+<a href="#1412-模型规模尚未扩展到llm级别-5695" class="nav-section" data-level="3">14.1.2 模型规模：尚未扩展到LLM级别</a>
+<a href="#1413-似然评估flow-based模型的挑战-5709" class="nav-section" data-level="3">14.1.3 似然评估：flow-based模型的挑战</a>
+<a href="#1414-长序列处理的限制-5721" class="nav-section" data-level="3">14.1.4 长序列处理的限制</a>
+<a href="#142-加速采样的方向-5733" class="nav-section" data-level="3">14.2 加速采样的方向</a>
+<a href="#1421-蒸馏技术从多步到单步-5737" class="nav-section" data-level="3">14.2.1 蒸馏技术：从多步到单步</a>
+<a href="#1422-一致性模型-5754" class="nav-section" data-level="3">14.2.2 一致性模型</a>
+<a href="#1423-高级ode求解器-5766" class="nav-section" data-level="3">14.2.3 高级ODE求解器</a>
+<a href="#1424-混合策略-5776" class="nav-section" data-level="3">14.2.4 混合策略</a>
+<a href="#143-规模化路径-5788" class="nav-section" data-level="3">14.3 规模化路径</a>
+<a href="#1431-更大的模型从652m到数十亿-5792" class="nav-section" data-level="3">14.3.1 更大的模型：从652M到数十亿</a>
+<a href="#1432-更多数据从45b到数万亿tokens-5804" class="nav-section" data-level="3">14.3.2 更多数据：从45B到数万亿tokens</a>
+<a href="#1433-更长的上下文-5816" class="nav-section" data-level="3">14.3.3 更长的上下文</a>
+<a href="#1434-多任务预训练-5828" class="nav-section" data-level="3">14.3.4 多任务预训练</a>
+<a href="#144-架构创新-5840" class="nav-section" data-level="3">14.4 架构创新</a>
+<a href="#1441-更好的编码器选择-5844" class="nav-section" data-level="3">14.4.1 更好的编码器选择</a>
+<a href="#1442-稀疏注意力机制-5856" class="nav-section" data-level="3">14.4.2 稀疏注意力机制</a>
+<a href="#1443-混合架构-5868" class="nav-section" data-level="3">14.4.3 混合架构</a>
+<a href="#1444-自适应噪声调度-5878" class="nav-section" data-level="3">14.4.4 自适应噪声调度</a>
+<a href="#145-与自回归模型的融合-5890" class="nav-section" data-level="3">14.5 与自回归模型的融合</a>
+<a href="#1451-块扩散方法-5894" class="nav-section" data-level="3">14.5.1 块扩散方法</a>
+<a href="#1452-层次化生成-5910" class="nav-section" data-level="3">14.5.2 层次化生成</a>
+<a href="#1453-混合解码策略-5925" class="nav-section" data-level="3">14.5.3 混合解码策略</a>
+<a href="#第十五章-实践指南与最佳实践-5939" class="nav-chapter" data-level="2">第十五章 实践指南与最佳实践</a>
+<a href="#151-快速上手-5943" class="nav-section" data-level="3">15.1 快速上手</a>
+<a href="#1511-环境搭建-5945" class="nav-section" data-level="3">15.1.1 环境搭建</a>
+<a href="#1512-使用预训练模型-5989" class="nav-section" data-level="3">15.1.2 使用预训练模型</a>
+<a href="#1513-生成示例-6018" class="nav-section" data-level="3">15.1.3 生成示例</a>
+<a href="#152-训练自己的elf模型-6097" class="nav-section" data-level="3">15.2 训练自己的ELF模型</a>
+<a href="#1521-数据准备清单-6099" class="nav-section" data-level="3">15.2.1 数据准备清单</a>
+<a href="#1522-配置文件编写-6147" class="nav-section" data-level="3">15.2.2 配置文件编写</a>
+<a href="#1523-训练监控与调试-6217" class="nav-section" data-level="3">15.2.3 训练监控与调试</a>
+<a href="#1524-检查点管理-6280" class="nav-section" data-level="3">15.2.4 检查点管理</a>
+<a href="#153-超参数调优指南-6323" class="nav-section" data-level="3">15.3 超参数调优指南</a>
+<a href="#1531-学习率选择-6325" class="nav-section" data-level="3">15.3.1 学习率选择</a>
+<a href="#1532-批量大小调整-6362" class="nav-section" data-level="3">15.3.2 批量大小调整</a>
+<a href="#1533-cfg-scale调优-6404" class="nav-section" data-level="3">15.3.3 CFG scale调优</a>
+<a href="#1534-采样步数选择-6439" class="nav-section" data-level="3">15.3.4 采样步数选择</a>
+<a href="#1535-去噪解码比例-6469" class="nav-section" data-level="3">15.3.5 去噪/解码比例</a>
+<a href="#154-常见问题解答-6490" class="nav-section" data-level="3">15.4 常见问题解答</a>
+<a href="#1541-训练不收敛怎么办-6492" class="nav-section" data-level="3">15.4.1 训练不收敛怎么办？</a>
+<a href="#1542-生成质量差怎么调-6552" class="nav-section" data-level="3">15.4.2 生成质量差怎么调？</a>
+<a href="#1543-如何减少推理时间-6601" class="nav-section" data-level="3">15.4.3 如何减少推理时间？</a>
+<a href="#1544-如何迁移到新语言领域-6650" class="nav-section" data-level="3">15.4.4 如何迁移到新语言/领域？</a>
 <div class="nav-part">后记</div>
+<a href="#elf的历史意义-6708" class="nav-section" data-level="3">ELF的历史意义</a>
+<a href="#连续扩散语言模型的未来展望-6718" class="nav-section" data-level="3">连续扩散语言模型的未来展望</a>
+<a href="#对研究者的建议-6732" class="nav-section" data-level="3">对研究者的建议</a>
+<a href="#对从业者的建议-6746" class="nav-section" data-level="3">对从业者的建议</a>
 <div class="nav-part">附录</div>
 <a href="#a-数学推导补充-6766" class="nav-chapter" data-level="2">A. 数学推导补充</a>
 <a href="#a1-flow-matching损失函数的完整推导-6768" class="nav-section" data-level="3">A.1 Flow Matching损失函数的完整推导</a>
@@ -716,10 +1010,7 @@ hr {
 <div class="toc-h1" style="margin-left:0px"><a href="#第二部分elf的核心技术与架构-950">第二部分：ELF的核心技术与架构</a></div>
 <div class="toc-h2" style="margin-left:20px"><a href="#第四章elf框架核心方法论-954">第四章：ELF框架——核心方法论</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#41-elf的整体架构概览-956">4.1 ELF的整体架构概览</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#elf推理的完整流程-981">ELF推理的完整流程</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#42-flow-matching在嵌入空间中的应用-1043">4.2 Flow Matching在嵌入空间中的应用</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#x-predictionelf的选择-1124">x-prediction（ELF的选择）</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#v-prediction标准方法-1132">v-prediction（标准方法）</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#43-最终解码从连续到离散的桥梁-1200">4.3 最终解码：从连续到离散的桥梁</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#44-双分支训练策略-1337">4.4 双分支训练策略</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#45-推理过程-1453">4.5 推理过程</a></div>
@@ -733,23 +1024,7 @@ hr {
 <div class="toc-h3" style="margin-left:40px"><a href="#62-时间条件机制-2401">6.2 时间条件机制</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#63-模型规模与缩放-2513">6.3 模型规模与缩放</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#64-jaxflax实现细节-2608">6.4 JAX/Flax实现细节</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#jax的核心优势函数式变换-2639">JAX的核心优势：函数式变换</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#vmap自动批处理-2648">vmap：自动批处理</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#pmap多设备并行-2651">pmap：多设备并行</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#定义并行训练步骤-2662">定义并行训练步骤</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#在多个设备上并行执行-2676">在多个设备上并行执行</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#elf训练的核心并行逻辑-2696">ELF训练的核心并行逻辑</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#第一次调用时编译后续调用直接执行编译后的代码-2750">第一次调用时编译，后续调用直接执行编译后的代码</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#tpu训练的最佳实践示例-2781">TPU训练的最佳实践示例</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#65-代码走读从配置到模型实例化-2818">6.5 代码走读：从配置到模型实例化</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#configstraining_configstrain_owt_elf-byml-2886">configs/training_configs/train_owt_ELF-B.yml</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#owt无条件生成的elf-b训练配置-2887">OWT无条件生成的ELF-B训练配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#训练配置-2891">训练配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#数据配置-2897">数据配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#编码器配置-2901">编码器配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#flow-matching配置-2905">Flow Matching配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#输出配置-2912">输出配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#采样配置-2917">采样配置</a></div>
 <div class="toc-h1" style="margin-left:0px"><a href="#第三部分实验验证与深入分析-3113">第三部分：实验验证与深入分析</a></div>
 <div class="toc-h2" style="margin-left:20px"><a href="#第七章实验设计与评估方法-3117">第七章：实验设计与评估方法</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#71-数据集选择与预处理-3119">7.1 数据集选择与预处理</a></div>
@@ -799,9 +1074,6 @@ hr {
 <div class="toc-h1" style="margin-left:0px"><a href="#第十一章工程实践与代码实现-4146">第十一章：工程实践与代码实现</a></div>
 <div class="toc-h2" style="margin-left:20px"><a href="#111-jaxflax生态系统-4150">11.1 JAX/Flax生态系统</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1111-jax的核心特性-4154">11.1.1 JAX的核心特性</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#jax的纯函数示例-4161">JAX的纯函数示例</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#自动微分-4168">自动微分</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#将单样本函数自动向量化为批量函数-4185">将单样本函数自动向量化为批量函数</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1112-flax模块系统-4191">11.1.2 Flax模块系统</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1113-与pytorch的对比-4223">11.1.3 与PyTorch的对比</a></div>
 <div class="toc-h2" style="margin-left:20px"><a href="#112-训练流水线实现-4243">11.2 训练流水线实现</a></div>
@@ -823,7 +1095,6 @@ hr {
 <div class="toc-h3" style="margin-left:40px"><a href="#1144-train_step完整训练步骤-4811">11.4.4 train_step：完整训练步骤</a></div>
 <div class="toc-h2" style="margin-left:20px"><a href="#115-复现与扩展指南-4873">11.5 复现与扩展指南</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1151-环境配置-4877">11.5.1 环境配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#主要依赖-4882">主要依赖</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1152-自定义数据集-4914">11.5.2 自定义数据集</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1153-超参数调优建议-4963">11.5.3 超参数调优建议</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1154-常见问题与解决方案-4992">11.5.4 常见问题与解决方案</a></div>
@@ -904,84 +1175,24 @@ hr {
 <div class="toc-h1" style="margin-left:0px"><a href="#第十五章-实践指南与最佳实践-5939">第十五章 实践指南与最佳实践</a></div>
 <div class="toc-h2" style="margin-left:20px"><a href="#151-快速上手-5943">15.1 快速上手</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1511-环境搭建-5945">15.1.1 环境搭建</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#创建conda环境-5956">创建conda环境</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#安装jaxgpu版本-5960">安装JAX（GPU版本）</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#安装jaxtpu版本-5963">安装JAX（TPU版本）</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#安装flax和其他依赖-5966">安装Flax和其他依赖</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1512-使用预训练模型-5989">15.1.2 使用预训练模型</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#加载配置-6007">加载配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#加载模型-6010">加载模型</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#查看模型参数量-6013">查看模型参数量</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1513-生成示例-6018">15.1.3 生成示例</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#创建采样器-6024">创建采样器</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#生成文本-6032">生成文本</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#解码为文本-6039">解码为文本</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#创建带cfg的采样器-6049">创建带CFG的采样器</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#条件生成-6057">条件生成</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#ode采样确定性-6075">ODE采样（确定性）</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#sde采样随机性-6083">SDE采样（随机性）</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#比较两种采样方式-6092">比较两种采样方式</a></div>
 <div class="toc-h2" style="margin-left:20px"><a href="#152-训练自己的elf模型-6097">15.2 训练自己的ELF模型</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1521-数据准备清单-6099">15.2.1 数据准备清单</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#推荐使用tfrecord格式-6124">推荐使用TFRecord格式</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#或者使用jsonl格式-6137">或者使用JSONL格式</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#tokens-101-2003-2023-1037-3231-102-6138">{"tokens": [101, 2003, 2023, 1037, 3231, 102]}</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1522-配置文件编写-6147">15.2.2 配置文件编写</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#configtrain_elf_largeyaml-6152">config/train_elf_large.yaml</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#模型配置-6154">模型配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#扩散配置-6167">扩散配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#训练配置-6175">训练配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#cfg配置-6186">CFG配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#self-conditioning配置-6192">Self-Conditioning配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#数据配置-6197">数据配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#评估配置-6204">评估配置</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#保存配置-6210">保存配置</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1523-训练监控与调试-6217">15.2.3 训练监控与调试</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#初始化wandb-6225">初始化wandb</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#在训练循环中记录指标-6232">在训练循环中记录指标</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#检查梯度-6261">检查梯度</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1524-检查点管理-6280">15.2.4 检查点管理</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#创建检查点管理器-6288">创建检查点管理器</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#保存检查点-6297">保存检查点</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#加载检查点-6305">加载检查点</a></div>
 <div class="toc-h2" style="margin-left:20px"><a href="#153-超参数调优指南-6323">15.3 超参数调优指南</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1531-学习率选择-6325">15.3.1 学习率选择</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1532-批量大小调整-6362">15.3.2 批量大小调整</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#梯度累积示例-6372">梯度累积示例</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1533-cfg-scale调优-6404">15.3.3 CFG scale调优</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#cfg-scale扫描-6416">CFG scale扫描</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#选择最优的cfg-scale-6434">选择最优的CFG scale</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1534-采样步数选择-6439">15.3.4 采样步数选择</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1535-去噪解码比例-6469">15.3.5 去噪/解码比例</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#在配置文件中调整-6480">在配置文件中调整</a></div>
 <div class="toc-h2" style="margin-left:20px"><a href="#154-常见问题解答-6490">15.4 常见问题解答</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1541-训练不收敛怎么办-6492">15.4.1 训练不收敛怎么办？</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#1-检查数据加载是否正确-6498">1. 检查数据加载是否正确</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#2-检查tokenization-6504">2. 检查tokenization</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#3-检查数据分布-6508">3. 检查数据分布</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#1-检查模型参数-6517">1. 检查模型参数</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#2-检查梯度流-6526">2. 检查梯度流</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#3-过拟合小数据集-6533">3. 过拟合小数据集</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#如果连小数据集都过拟合不了说明模型有问题-6539">如果连小数据集都过拟合不了，说明模型有问题</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1542-生成质量差怎么调-6552">15.4.2 生成质量差怎么调？</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#1-增加采样步数-6563">1. 增加采样步数</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#2-调整cfg-scale-6566">2. 调整CFG scale</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#3-使用sde采样-6569">3. 使用SDE采样</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#4-使用self-conditioning-6576">4. 使用Self-Conditioning</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#1-重复惩罚-6585">1. 重复惩罚</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#2-长度惩罚-6591">2. 长度惩罚</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#3-多样本选择-6595">3. 多样本选择</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1543-如何减少推理时间-6601">15.4.3 如何减少推理时间？</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#使用最少的步数达到可接受的质量-6607">使用最少的步数达到可接受的质量</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#使用高阶求解器-6613">使用高阶求解器</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#加载蒸馏后的模型-6623">加载蒸馏后的模型</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#批量生成多个序列-6630">批量生成多个序列</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#使用jit编译-6641">使用JIT编译</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#使用半精度推理-6646">使用半精度推理</a></div>
 <div class="toc-h3" style="margin-left:40px"><a href="#1544-如何迁移到新语言领域-6650">15.4.4 如何迁移到新语言/领域？</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#1-全模型微调-6661">1. 全模型微调</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#2-lora微调参数高效-6671">2. LoRA微调（参数高效）</a></div>
-<div class="toc-h1" style="margin-left:0px"><a href="#3-渐进式微调-6687">3. 渐进式微调</a></div>
 <div class="toc-h1" style="margin-left:0px"><a href="#后记-6706">后记</a></div>
 <div class="toc-h2" style="margin-left:20px"><a href="#elf的历史意义-6708">ELF的历史意义</a></div>
 <div class="toc-h2" style="margin-left:20px"><a href="#连续扩散语言模型的未来展望-6718">连续扩散语言模型的未来展望</a></div>
